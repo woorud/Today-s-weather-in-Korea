@@ -14,7 +14,7 @@ class weather(QMainWindow, form_class):
         QMainWindow.__init__(self, parent)
         self.setupUi(self)
         self.url1 = "http://api.openweathermap.org/data/2.5/weather?id="
-        self.appid = input()
+        self.appid = input() # 074c4527c3cfdf3ff8baf79bb49455c1
         self.url2 = "&appid={}".format(self.appid)
 
         file = open("city.list.json", encoding="UTF-8-SIG").read()
